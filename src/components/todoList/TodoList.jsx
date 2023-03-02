@@ -1,27 +1,26 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import TodoItem from '../todoItem/TodoItem';
+import { toggleStatus } from '../../redux/todos/actionCreators';
+import style from './TodoList.module.css';
 
 function TodoList() {
+  const dispatch = useDispatch();
   const todoList = useSelector((state) => state.todos);
-  console.log(todoList);
+  const onStatusChange = (id) => {
+    dispatch(toggleStatus(id));
+  };
   return (
-    <table>
+    <table className={style.table}>
       <tbody>
-        <tr>
-          <th>ID</th>
-          <th>Title</th>
-          <th>Description</th>
-          <th>Status</th>
+        <tr className={style.tableRow}>
+          <th className={style.tableHeader}>ID</th>
+          <th className={style.tableHeader}>Title</th>
+          <th className={style.tableHeader}>Description</th>
+          <th className={style.tableHeader}>Status</th>
         </tr>
         {todoList.map((todo) => (
-          <tr key={todo.id}>
-            <td>{todo.id}</td>
-            <td>{todo.title}</td>
-            <td>{todo.description}</td>
-            <td>
-              <input type="checkbox" name="key" className="key" />
-            </td>
-          </tr>
+          <TodoItem todo={todo} key={todo.id} onStatusChange={onStatusChange} />
         ))}
       </tbody>
     </table>

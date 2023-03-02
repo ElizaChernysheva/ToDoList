@@ -1,0 +1,21 @@
+.error {
+    border: 1px solid red;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    position: relative;
+}
+
+.inputLabel {
+    margin-bottom: 10px;
+}
+
+.inputError {
+    margin-top: 10px;
+    color: red;
+    position: absolute;
+    bottom: -23px;
+}

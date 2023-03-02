@@ -1,0 +1,38 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1200;
+}
+
+.modal {
+    width: 400px;
+    height: 260px;
+    padding: 20px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.modalHeader {
+    text-align: center;
+}
+
+.statusWrapper {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.btn {
+    width: 100px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: brown 1px solid;
+    border-radius: 5px;
+}

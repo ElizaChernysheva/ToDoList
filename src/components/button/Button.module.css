@@ -1,0 +1,7 @@
+.button {
+    width: 100px;
+    display: block;
+    cursor: pointer;
+    padding: 2px 5px;
+    height: 23px;
+}

@@ -1,0 +1,9 @@
+.form {
+    display: flex;
+    align-items: end;
+    margin-bottom: 50px;
+}
+
+.inputWrapper {
+    display: flex;
+}

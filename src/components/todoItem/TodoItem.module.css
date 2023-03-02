@@ -1,0 +1,12 @@
+.item {
+    background-color: #dadada;
+}
+
+.itemData {
+    max-width: 100px;
+    padding: 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}

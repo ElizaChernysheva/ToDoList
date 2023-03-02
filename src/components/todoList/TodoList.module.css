@@ -1,0 +1,13 @@
+.table {
+    width: 400px;
+    text-align: center;
+    border-spacing: 0 20px;
+}
+
+.tableHeader {
+    width: 100px;
+}
+
+.tableRow {
+    background-color: darkgrey;
+}
